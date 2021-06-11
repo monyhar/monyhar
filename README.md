@@ -1,19 +1,14 @@
-# ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
+# 梦弘浏览器 - 全新自主研发，打破国外垄断
 
-Chromium is an open-source browser project that aims to build a safer, faster,
-and more stable way for all users to experience the web.
+1. 这是我们全新自主研发的浏览器
+2. 当然我不是 Chrome 套壳
+3. Chrome 跟 chromium 是不一样的，chromium 能叫 Chrome 吗？
+4. 如果你一定要追根究底，那我确实是 chromium 套壳，但在未来我会删掉 chromium 的代码
+5. 借鉴已有的开源项目是很自然的事，可能你们对开源有误解
+6. 梦弘浏览器采用微内核、形式化验证、比 Chrome 快 10000%
+7. 不过第 6 点说的不是这个版本，而是 [monyhar-lite](https://github.com/monyhar/monyhar-lite)
 
-The project's web site is https://www.chromium.org.
 
-To check out the source code locally, don't use `git clone`! Instead,
-follow [the instructions on how to get the code](docs/get_the_code.md).
+# Acknowledgement
 
-Documentation in the source is rooted in [docs/README.md](docs/README.md).
-
-Learn how to [Get Around the Chromium Source Code Directory Structure
-](https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code).
-
-For historical reasons, there are some small top level directories. Now the
-guidance is that new top level directories are for product (e.g. Chrome,
-Android WebView, Ash). Even if these products have multiple executables, the
-code should be in subdirectories of the product.
+创意来自[此处](https://www.zhihu.com/question/463566649/answer/1929522948)，我不是答主。
